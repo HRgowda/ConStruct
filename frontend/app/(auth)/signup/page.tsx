@@ -36,7 +36,7 @@ export default function SingIn() {
             <div className="mt-8">
                     <label htmlFor="">Name</label>
                     <div className="mt-2">
-                        <input type="email" placeholder="John" className="border border-wihte rounded-lg p-1 w-full" onChange={(e) => {
+                        <input type="email" placeholder="John" className="border border-wihte rounded-lg p-1 w-full" onChange={(e: any) => {
                             setName(e.target.value)
                         }}></input>
                     </div>
@@ -44,7 +44,7 @@ export default function SingIn() {
                 <div className="mt-8">
                     <label htmlFor="">Email</label>
                     <div className="mt-2">
-                        <input type="email" placeholder="john@gmail.com" className="border border-wihte rounded-lg p-1 w-full" onChange={(e) => {
+                        <input type="email" placeholder="john@gmail.com" className="border border-wihte rounded-lg p-1 w-full" onChange={(e: any) => {
                             setEmail(e.target.value)
                         }}></input>
                     </div>
@@ -53,7 +53,7 @@ export default function SingIn() {
                 <div className="mt-8">
                     <label htmlFor="">Password</label>
                     <div className="mt-2">
-                        <input type="password" id="password" placeholder="Password" className="border border-white rounded-lg p-1 w-full" onChange={(e) => {
+                        <input type="password" id="password" placeholder="Password" className="border border-white rounded-lg p-1 w-full" onChange={(e: any) => {
                             setPassWord(e.target.value)
                         }}></input>
                     </div>

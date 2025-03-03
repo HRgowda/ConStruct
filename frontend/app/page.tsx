@@ -9,9 +9,9 @@ export default function Home() {
     const token = localStorage.getItem("token1");
 
     if(token){
-      router.replace("/dashboard");
+      router.push("/dashboard");
     } else {
-      router.replace("/signin")
+      router.push("/signin")
     }
   })
 

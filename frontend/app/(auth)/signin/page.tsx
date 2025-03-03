@@ -46,7 +46,7 @@ export default function SignIn() {
                             type="email" 
                             placeholder="john@gmail.com" 
                             className="border border-white rounded-lg p-2 w-full" 
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={(e: any) => setEmail(e.target.value)}
                         />
                     </div>
 
@@ -56,7 +56,7 @@ export default function SignIn() {
                             type="password" 
                             placeholder="Password" 
                             className="border border-white rounded-lg p-2 w-full" 
-                            onChange={(e) => {
+                            onChange={(e: any) => {
                                 setPassWord(e.target.value)
                             }}
                         />

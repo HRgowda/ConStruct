@@ -59,7 +59,7 @@ export default function dashboard() {
           <table className="table-auto w-full bg-slate-700 rounded-lg overflow-hidden shadow-lg hover:shadow-white/80 duration-300 ease-in-out">
             <thead className="bg-gray-800 text-white">
               <tr>
-                {details.map((item, index) => (
+                {details.map((item: any, index: number) => (
                   <th key={index} className="px-6 py-3 text-center border-b border-gray-600">
                     {item}
                   </th>
@@ -68,7 +68,7 @@ export default function dashboard() {
             </thead>
             <tbody>
               {data.length > 0 ? (
-                data.map((entry, index) => (
+                data.map((entry: any, index: number) => (
                   <tr key={index} className="hover:bg-gray-600">
                     <td className="px-6 py-3 text-center border-b border-gray-600">{new Date(entry.created_at).toLocaleDateString("en-US", {
                       month: "short",
