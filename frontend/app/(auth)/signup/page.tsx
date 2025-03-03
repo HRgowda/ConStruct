@@ -4,7 +4,8 @@ import axios from "axios"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 import Link from "next/link"
-import { BACKEND_URL } from "../signin/page"
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export default function SingIn() {
     const [name, setName] = useState("")
@@ -18,7 +19,6 @@ export default function SingIn() {
             })
 
             if(response.data.status === 200) {
-                // localStorage.setItem("token1", response.data.token)
                 router.push("/dashboard")
             }
 

@@ -5,9 +5,9 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 
-export const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
-export default function SignIn() {
+export default function SignInPage() {
     const [email, setEmail] = useState("");
     const [password, setPassWord] = useState("")
 
