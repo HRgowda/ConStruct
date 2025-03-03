@@ -16,7 +16,7 @@ const THINGSPEAK_URL = process.env.NEXT_PUBLIC_THINGSPEAK_URL;
 export default function dashboard() {
   const router = useRouter();
   const [data, setData] = useState<ThingSpeaktypes[]>([])
-  const details = ["Time", "Acceleration", "Latitude", "Longitude", "Pulse Rate"];
+  const details = ["Time", "Latitude", "Longitude" ,"Acceleration" , "Pulse Rate"];
 
   async function fetchdata() {
       try{
