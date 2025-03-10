@@ -13,6 +13,7 @@ export default function SignInPage() {
 
     const router = useRouter();
 
+
     const handleClick = async (e: React.FormEvent) => {
         e.preventDefault(); // Prevents default form submission
 

@@ -91,8 +91,9 @@ app.post("/owner_signin", async (req: any, res: any):Promise<void> => {
             return
         }
 
-    } catch {
-        console.log("Error while signing in")
+    } catch (error: any) {
+
+        console.log("Error while signing in", error)
     }
 })
 
