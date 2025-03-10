@@ -79,9 +79,9 @@ export default function dashboard() {
                       hourCycle: "h12"
 
                     })}</td>
-                    <td className="px-6 py-3 text-center border-b border-gray-600">{entry.field1 && entry.field1 !== "0" ? entry.field1 : "12.881626"}</td>
-                    <td className="px-6 py-3 text-center border-b border-gray-600">{entry.field2 && entry.field2 !== "0" ? entry.field2 : "77.444617"}</td>
-                    <td className="px-6 py-3 text-center border-b border-gray-600">{entry.field3 || "N/A"}</td>
+                    <td className="px-6 py-3 text-center border-b border-gray-600">{entry.field1 && parseFloat(entry.field1) !== 0 ? entry.field1 : "12.881626"}</td>
+                    <td className="px-6 py-3 text-center border-b border-gray-600">{entry.field2 && parseFloat(entry.field2) !== 0 ? entry.field2 : "77.444617"}</td>
+                    <td className="px-6 py-3 text-center border-b border-gray-600">{entry.field3 || "N/A"}</td> 
                     <td className="px-6 py-3 text-center border-b border-gray-600">{entry.field4 || "N/A"}</td>
                   </tr>   
                 ))
